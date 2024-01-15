@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap'); */
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+}
+@layer utilities {
+  .clg {
+    border: 1px solid red;
+  }
+}
+
+@layer components {
+  .myscrollbar {
+    @apply scrollbar-thin scrollbar-thumb-gray-600;
+  }
+
+  .btn {
+    @apply rounded-md hover:shadow-md transition-all duration-150 focus:outline-none focus:ring focus:ring-gray-400 border-2 border-gray-500;
+  }
+}
